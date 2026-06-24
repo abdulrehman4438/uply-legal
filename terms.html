@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service — Uply: Wash to Wake</title>
+    <meta name="description" content="Terms of Service for Uply: Wash to Wake iOS alarm app. Subscription details, usage guidelines, and legal terms.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0C0B0E;
+            --surface: #18131F;
+            --card: #1E1828;
+            --border: rgba(255,255,255,0.08);
+            --accent: #E28C68;
+            --accent-soft: rgba(226,140,104,0.12);
+            --gold: #FEAF1A;
+            --text: #FFFFFF;
+            --muted: rgba(255,255,255,0.55);
+            --font: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font);
+            line-height: 1.75;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .header {
+            position: sticky; top: 0; z-index: 100;
+            background: rgba(12,11,14,0.85);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            padding: 16px 24px;
+            display: flex; align-items: center; justify-content: space-between;
+        }
+        .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+        .logo-icon {
+            width: 32px; height: 32px; background: var(--accent);
+            border-radius: 8px; display: flex; align-items: center; justify-content: center;
+            font-weight: 900; font-size: 17px; color: var(--bg);
+            box-shadow: 0 3px 12px rgba(226,140,104,0.35);
+        }
+        .logo-name { font-weight: 700; font-size: 18px; color: var(--text); }
+        .back-link {
+            color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500;
+            transition: color 0.2s;
+        }
+        .back-link:hover { color: var(--accent); }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+        }
+
+        .page-label {
+            display: inline-block;
+            padding: 5px 14px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 12px; font-weight: 700;
+            letter-spacing: 1.5px; text-transform: uppercase;
+            border-radius: 20px;
+            border: 1px solid rgba(226,140,104,0.2);
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 36px; font-weight: 800; line-height: 1.15;
+            margin-bottom: 12px; letter-spacing: -0.5px;
+        }
+
+        .effective-date {
+            font-size: 14px; color: var(--muted); margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 20px; font-weight: 700; margin-top: 40px; margin-bottom: 12px;
+            color: var(--accent); letter-spacing: -0.3px;
+        }
+
+        h3 {
+            font-size: 16px; font-weight: 600; margin-top: 24px; margin-bottom: 8px;
+            color: var(--text);
+        }
+
+        p, li {
+            font-size: 15px; color: rgba(255,255,255,0.78); line-height: 1.8;
+            margin-bottom: 12px;
+        }
+
+        ul, ol { padding-left: 20px; margin-bottom: 16px; }
+        li { margin-bottom: 6px; }
+
+        .info-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 20px 24px;
+            margin: 20px 0;
+        }
+
+        .info-card.highlight {
+            border-color: rgba(226,140,104,0.25);
+            background: linear-gradient(135deg, rgba(226,140,104,0.06) 0%, rgba(24,19,31,1) 100%);
+        }
+
+        .info-card.warning {
+            border-color: rgba(254,175,26,0.25);
+            background: linear-gradient(135deg, rgba(254,175,26,0.06) 0%, rgba(24,19,31,1) 100%);
+        }
+
+        .badge {
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 4px 10px; font-size: 12px; font-weight: 600;
+            border-radius: 8px; margin-bottom: 8px;
+        }
+        .badge.gold { background: rgba(254,175,26,0.12); color: #FEAF1A; }
+        .badge.green { background: rgba(78,205,196,0.12); color: #4ECDC4; }
+
+        .plan-grid {
+            display: grid; gap: 12px; margin: 16px 0;
+        }
+
+        .plan-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 18px 22px;
+        }
+
+        .plan-card .plan-name {
+            font-weight: 700; font-size: 16px; color: var(--text);
+            margin-bottom: 4px;
+        }
+
+        .plan-card .plan-price {
+            font-size: 22px; font-weight: 800; color: var(--accent);
+            margin-bottom: 4px;
+        }
+
+        .plan-card .plan-detail {
+            font-size: 13px; color: var(--muted); line-height: 1.6;
+        }
+
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        strong { color: var(--text); font-weight: 600; }
+
+        table {
+            width: 100%; border-collapse: collapse; margin: 16px 0;
+        }
+        th, td {
+            text-align: left; padding: 10px 14px; font-size: 14px;
+            border-bottom: 1px solid var(--border);
+        }
+        th { color: var(--accent); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; }
+        td { color: rgba(255,255,255,0.78); }
+
+        .footer-note {
+            margin-top: 48px; padding-top: 24px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+        .footer-note p {
+            font-size: 13px; color: var(--muted);
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 28px; }
+            .container { padding: 32px 18px 60px; }
+            table { font-size: 13px; }
+            th, td { padding: 8px 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <a href="index.html" class="logo">
+        <div class="logo-icon">U</div>
+        <span class="logo-name">Uply</span>
+    </a>
+    <a href="index.html" class="back-link">← Back to Home</a>
+</div>
+
+<div class="container">
+
+    <div class="page-label">Legal</div>
+    <h1>Terms of Service</h1>
+    <p class="effective-date">Effective Date: June 24, 2025 &nbsp;·&nbsp; Last Updated: June 24, 2025</p>
+
+    <p>Please read these Terms of Service ("Terms") carefully before using Uply: Wash to Wake ("Uply", "the App"). By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree, do not use the App.</p>
+
+    <h2>1. About the App</h2>
+    <p>Uply: Wash to Wake is an iOS alarm application designed to help users wake up by requiring completion of physical wake-up missions before the alarm can be dismissed. The App is developed and published by Abdul Rehman.</p>
+    <p>Current wake-up missions include:</p>
+    <ul>
+        <li><strong>Wash to Wake:</strong> The user must wash their face with water and present their wet face to the camera. The App uses on-device image analysis to detect visual moisture cues.</li>
+        <li><strong>Pushups:</strong> The user must complete a set number of pushups. The App uses on-device body-pose tracking to verify rep completion.</li>
+    </ul>
+
+    <h2>2. Eligibility</h2>
+    <p>You must be at least 13 years of age to use Uply. If you are under 18, you should review these Terms with a parent or guardian. By using the App, you represent that you meet the age requirement and have the authority to enter into these Terms.</p>
+
+    <h2>3. License to Use</h2>
+    <p>Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to download and use the App on any Apple device that you own or control, as permitted by the Apple App Store Terms of Service.</p>
+    <p>You may <strong>not</strong>:</p>
+    <ul>
+        <li>Copy, modify, distribute, sell, or lease any part of the App</li>
+        <li>Reverse-engineer, decompile, or attempt to extract the source code</li>
+        <li>Use the App for any illegal or unauthorized purpose</li>
+        <li>Attempt to circumvent or defeat the wake-up mission verification system</li>
+    </ul>
+
+    <h2>4. Subscriptions &amp; Payments</h2>
+
+    <div class="info-card highlight">
+        <div class="badge gold">💳 Billing</div>
+        <p style="margin-bottom:0">All payments are processed exclusively by <strong>Apple</strong> through the App Store. Uply does not collect, store, or process any payment information, credit card numbers, or billing details.</p>
+    </div>
+
+    <h3>4.1 Available Plans</h3>
+    <div class="plan-grid">
+        <div class="plan-card">
+            <div class="plan-name">Monthly Membership</div>
+            <div class="plan-price">$7.99 / month</div>
+            <div class="plan-detail">Billed monthly after a 3-day free trial. Auto-renews until cancelled.</div>
+        </div>
+        <div class="plan-card">
+            <div class="plan-name">Annual Membership</div>
+            <div class="plan-price">$59.99 / year</div>
+            <div class="plan-detail">Billed annually after a 3-day free trial. Auto-renews until cancelled. Save 37% compared to monthly.</div>
+        </div>
+        <div class="plan-card">
+            <div class="plan-name">Lifetime Ownership</div>
+            <div class="plan-price">$149.99 one-time</div>
+            <div class="plan-detail">One-time purchase. No recurring charges. Access all premium features forever.</div>
+        </div>
+    </div>
+
+    <h3>4.2 Free Trial</h3>
+    <p>Monthly and Annual plans include a <strong>3-day free trial</strong>. You will not be charged during the trial period. If you do not cancel before the trial ends, your subscription will automatically convert to a paid subscription and your Apple ID will be charged.</p>
+
+    <h3>4.3 Auto-Renewal</h3>
+    <p>Monthly and Annual subscriptions <strong>automatically renew</strong> at the end of each billing period unless cancelled at least 24 hours before the current period ends. The renewal charge will be applied to your Apple ID account within 24 hours before the end of the current period.</p>
+
+    <h3>4.4 How to Cancel</h3>
+    <p>You can cancel your subscription at any time through your Apple ID account settings:</p>
+    <ol>
+        <li>Open the <strong>Settings</strong> app on your iPhone</li>
+        <li>Tap your <strong>name</strong> at the top</li>
+        <li>Tap <strong>Subscriptions</strong></li>
+        <li>Select <strong>Uply</strong> and tap <strong>Cancel Subscription</strong></li>
+    </ol>
+    <p>Cancellation takes effect at the end of the current billing period. You will continue to have access to premium features until the period expires.</p>
+
+    <h3>4.5 Refunds</h3>
+    <p>Refund requests are handled exclusively by Apple. To request a refund, visit <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a> or contact Apple Support. Uply cannot process refunds directly.</p>
+
+    <h3>4.6 Free Tier</h3>
+    <p>Uply offers a free tier with limited features. The free tier includes advertisements served by Google AdMob and provides access to basic alarm functionality with the standard Wash to Wake mission and classic alarm tones.</p>
+
+    <h2>5. Premium Features</h2>
+    <p>Uply Premium unlocks the following features:</p>
+    <ul>
+        <li>Unlimited alarm schedules and weekday configurations</li>
+        <li>All 15+ premium alarm tones</li>
+        <li>Verified Wash to Wake face scan with anti-cheat protection</li>
+        <li>Live Pushup mission with AI body-pose tracking</li>
+        <li>Wake history, streak tracking, and performance graphs</li>
+        <li>Ad-free experience (no banner or interstitial ads)</li>
+        <li>Home screen widgets (Streak Tracker and Next Alarm)</li>
+    </ul>
+
+    <h2>6. App Functionality &amp; Limitations</h2>
+
+    <div class="info-card warning">
+        <div class="badge gold">⚠️ Important</div>
+        <p style="margin-bottom:0">Uply's wake-up missions use on-device computer vision to analyze visual cues. While designed to be accurate, <strong>no automated system is infallible</strong>. Environmental factors such as lighting, camera angle, and device positioning may affect mission verification accuracy.</p>
+    </div>
+
+    <h3>6.1 Screen Time &amp; App Blocking</h3>
+    <p>If you enable the "Prevent Scrolling" or "Prevent App Deletion" features, Uply uses Apple's Family Controls framework to temporarily restrict access to other apps during an active alarm. These restrictions are:</p>
+    <ul>
+        <li>Only active during your scheduled alarm window</li>
+        <li>Automatically removed once you complete your wake-up mission</li>
+        <li>Controlled entirely by Apple's Screen Time system — Uply does not access or monitor your app usage data</li>
+        <li>Optional — you can disable these features at any time in alarm settings</li>
+    </ul>
+
+    <h3>6.2 Alarm Reliability</h3>
+    <p>Uply uses Apple's local notification system and background audio to deliver alarms. While we design for maximum reliability, alarm delivery depends on iOS system behavior. We recommend:</p>
+    <ul>
+        <li>Keeping the App installed (not offloaded)</li>
+        <li>Granting notification permissions</li>
+        <li>Not enabling Focus modes that may silence Uply notifications</li>
+        <li>Not relying on Uply as your only alarm for safety-critical situations</li>
+    </ul>
+
+    <h2>7. User Conduct</h2>
+    <p>You agree not to:</p>
+    <ul>
+        <li>Use the App in any way that violates applicable laws or regulations</li>
+        <li>Attempt to bypass, manipulate, or cheat the mission verification systems</li>
+        <li>Use the App to harass, harm, or endanger yourself or others</li>
+        <li>Interfere with or disrupt the App's functionality</li>
+    </ul>
+
+    <h2>8. Intellectual Property</h2>
+    <p>All content, design, code, graphics, logos, and trademarks associated with Uply are the exclusive property of Abdul Rehman or their respective licensors. You may not use, reproduce, or distribute any of these materials without prior written consent.</p>
+
+    <h2>9. Third-Party Services</h2>
+    <p>The App integrates the following third-party services:</p>
+    <table>
+        <thead>
+            <tr><th>Service</th><th>Purpose</th><th>Applies To</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Apple StoreKit</td><td>Subscription management</td><td>All users</td></tr>
+            <tr><td>Google AdMob</td><td>Advertising</td><td>Free tier only</td></tr>
+            <tr><td>Apple HealthKit</td><td>Sleep data insights</td><td>Opted-in users</td></tr>
+            <tr><td>Apple WidgetKit</td><td>Home screen widgets</td><td>All users</td></tr>
+        </tbody>
+    </table>
+    <p>These services are governed by their own terms and privacy policies. We encourage you to review them independently.</p>
+
+    <h2>10. Disclaimer of Warranties</h2>
+    <p>The App is provided <strong>"as is"</strong> and <strong>"as available"</strong> without warranties of any kind, whether express or implied. We do not warrant that the App will be uninterrupted, error-free, or free of harmful components.</p>
+    <p>Specifically, we do not guarantee:</p>
+    <ul>
+        <li>100% accuracy of wet-face detection or pushup counting</li>
+        <li>That alarms will fire under all iOS conditions and configurations</li>
+        <li>Compatibility with all current or future iOS versions</li>
+    </ul>
+
+    <h2>11. Limitation of Liability</h2>
+    <p>To the maximum extent permitted by applicable law, Abdul Rehman and Uply shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of data, missed alarms, or any damages arising from your use or inability to use the App.</p>
+
+    <h2>12. Indemnification</h2>
+    <p>You agree to indemnify and hold harmless Abdul Rehman and Uply from any claims, damages, losses, or expenses (including reasonable attorney fees) arising from your use of the App or violation of these Terms.</p>
+
+    <h2>13. Apple's Standard EULA</h2>
+    <p>In addition to these Terms, your use of the App is subject to <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Apple's Standard End User License Agreement (EULA)</a>. In the event of any conflict between these Terms and Apple's EULA, Apple's EULA shall take precedence to the extent required by Apple.</p>
+
+    <h2>14. Termination</h2>
+    <p>We reserve the right to suspend or terminate your access to the App at any time, with or without cause, and with or without notice. Upon termination, your license to use the App is revoked immediately.</p>
+    <p>You may terminate these Terms at any time by deleting the App from your device and cancelling any active subscriptions.</p>
+
+    <h2>15. Governing Law</h2>
+    <p>These Terms shall be governed by and construed in accordance with the laws of Pakistan, without regard to its conflict of law provisions. Any disputes arising from these Terms shall be resolved in the courts of Pakistan.</p>
+
+    <h2>16. Changes to These Terms</h2>
+    <p>We may update these Terms from time to time. Changes will be reflected on this page with an updated "Last Updated" date. Continued use of the App after changes constitutes acceptance of the revised Terms. If we make material changes, we will provide notice through the App or by other means.</p>
+
+    <h2>17. Contact Us</h2>
+    <p>If you have any questions about these Terms of Service, please contact us:</p>
+    <div class="info-card">
+        <p><strong>Email:</strong> <a href="mailto:support@uplyalarm.com">support@uplyalarm.com</a></p>
+        <p style="margin-bottom:0"><strong>Developer:</strong> Abdul Rehman</p>
+    </div>
+
+    <div class="footer-note">
+        <p>© 2025 Uply: Wash to Wake. All rights reserved.</p>
+        <p style="margin-top:8px">
+            <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+            <a href="index.html">Home</a>
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>
